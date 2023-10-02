@@ -1,6 +1,6 @@
 # Child Oral Antibiotic Dose Calculator
 Child Oral Antibiotic Dose Calculator (COADC) is a dose calculator designed to be used by pharmacists or patients to verify the dosages of children antibiotic prescribed by their doctors.
-### Video Demo:  <URL HERE>
+### Video Demo: [demo video](https://www.youtube.com/watch?v=goKAUJqt4UE)
 
 ### Motivation:
 As pharmacists often have to take a long time to calculate children antibiotic dosee especially on a busy day, COADC is designed to speed up the process of verifying doctors' prescriptions while dispensing children antibiotic prescriptions.
