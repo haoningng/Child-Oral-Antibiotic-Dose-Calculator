@@ -9,7 +9,7 @@ As pharmacists often have to take a long time to calculate children antibiotic d
 This project is built using primarily HTML5, CSS, Javascript. On top of that, this project is buit on Flask framework.
 
 On the backend, the database is handled using SQLite which is imported from CS50 library.
-![Screenshot of the antibiotic dosages database](project/Screenshot1.png)
+![Screenshot of the antibiotic dosages database](Screenshot1.png)
 Note about each columns in the antibiotic table:
 * **ANTIBIOTIC**: This column lists all the **antibiotics**.
 * **STRENGTH (mg/5ml)**: This column lists all the **strengths** available for each antibiotic (based on the local availabilities in Australia).
