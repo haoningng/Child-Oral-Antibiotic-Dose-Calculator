@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <!--List all the informations given by users-->
+    <form action= "/dose", method="post">
+        <fieldset>
+        <legend>Input:</legend>
+        <label for="med">Precribed Medication:</label>
+        <div>{{antibiotic}}</div>
+        <br>
+        <label for="strength">Strength:</label>
+        <div>{{strength}}</div>
+        <br>
+        <label for="volume">Prescribed Volume Per Dose:</label>
+        <div>{{volume}}</div>
+        <br>
+        <label for="frequency">Prescribed Dose Frequency:</label>
+        <div>{{frequency}}</div>
+        <br>
+        <label for="weight">Child's weight:</label>
+        <div>{{weight}}</div>
+        <br>
+        </fieldset>
+    </form>
+    <br>
+    <!--DISPLAY RESULTS-->
+    <fieldset>
+        <legend>Results:</legend>
+        <div>Total Prescribed Dose: {{prescribed_dose}} mg/day</div>
+        <br>
+        <div>Minimum Therapeutic Daily Dose: {{minimum}} mg/day</div>
+        <br>
+        <div>Maximum Therapeutic Daily Dose: {{maximum}} mg/day</div>
+        <br>
+        <div id="result">{{result}}</div>
+    </fieldset>
+    <br><br><br>
+    <!--This button allows the user to start again-->
+    <button id="button" class="home">Start Again</button>
+{% endblock %}

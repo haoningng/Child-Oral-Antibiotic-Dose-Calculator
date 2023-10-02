@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <form action= "/dose", method="post">
+        <fieldset>
+        <legend>Input:</legend>
+        <label for="med">Precribed Medication:</label>
+        <select id="antibiotic" name="antibiotic">
+            <!--antibiotic selection is locked with whatever the user selected on previous page-->
+            <option selected locked>{{antibiotic}}</option>
+        </select>
+        <br><br>
+        <label for="strength">Strength:</label>
+        <select id="strength" name="strength">
+            <option selected disabled>Select one</option>
+            <!--Provide selections for strengths-->
+            {% for each in strength %}
+            <option>{{ each.strength }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+        <!--Asks user for the prescribed volume per dose (mL/dose)-->
+        <label for="volume">Prescribed Volume Per Dose (mL):</label>
+        <input autocomplete="off" required autofocus id="volume" name="volume" type="float" min="0.00">
+        <br><br>
+        <!--Asks user for the prescribed dose frequency (times/day)-->
+        <label for="frequency">Prescribed Dose Frequency (times per day):</label>
+        <input autocomplete="off" required autofocus id="frequency" name="frequency" type="float" min="1">
+        <br><br>
+        <!--Asks user for the child's body weight (kg)-->
+        <label for="weight">Child's weight (kg):</label>
+        <input autocomplete="off" required autofocus id="weight" name="weight" type="float" min="0.0">
+        <br><br>
+        <!--Submit button-->
+        <input id="button" class="submit" type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <br><br><br>
+    <!--This button allows the user to start again-->
+    <button id="button" class="home">Start Again</button>
+{% endblock %}

@@ -1,1 +1,23 @@
+{% extends "layout.html" %}
 
+{% block main %}
+    <form action= "/input", method="post">
+        <fieldset>
+        <legend>Input:</legend>
+        <label for="med">Precribed Medication:</label>
+        <select id="antibiotic" name="antibiotic">
+            <option selected disabled>Select one</option>
+            <!--Provide selections for antibiotics-->
+            {% for each in antibiotic %}
+            <option value="{{each.antibiotic}}">{{ each.antibiotic }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+        <!--Submit button-->
+        <input id="button" type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <br><br><br>
+    <!--This button allows the user to start again-->
+    <button id="button" class="home">Start Again</button>
+{% endblock %}
