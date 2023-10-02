@@ -1,1 +1,43 @@
+header {
+    background-color: #12332d;
+    color: #fff;
+    padding: 5rem 1rem;
+    text-align: center;
+}
 
+footer {
+    position: absolute;
+    bottom: 1;
+    left: 110;
+    z-index: 10;
+}
+
+main {
+    background-color: white;
+    font-size: 100%;
+    text-align: center;
+    padding: 25px 10% 100px;
+    justify-content: end;
+}
+
+#button {
+    background-color: #4CA000; /* Green */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+    transition-duration: 0.4s;
+}
+
+#button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#result {
+    font-size: 200%;
+}
